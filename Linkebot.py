@@ -28,6 +28,7 @@ if (sys.argv[1] == "--login" and sys.argv[3]  == "--password") or  (sys.argv[3] 
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(2)
                 i = -1
+            time.sleep(0.2)
             i += 1
     except Exception :
         print("Wrong login or password")
