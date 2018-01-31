@@ -1,11 +1,12 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import ramdom
 import time
 import sys
 
 i = 0
 if len(sys.argv) < 4 :
-    print('Usage : python linkebot --login "login" --password "password"')
+    print('Usage : python Linkebot.py --login "login" --password "password"')
     sys.exit(0)
 if (sys.argv[1] == "--login" and sys.argv[3]  == "--password") or  (sys.argv[3] == "--login" and sys.argv[1]  == "--password") :
     try :
@@ -28,9 +29,9 @@ if (sys.argv[1] == "--login" and sys.argv[3]  == "--password") or  (sys.argv[3] 
                 driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                 time.sleep(2)
                 i = -1
-            time.sleep(0.2)
+            time.sleep(random.randrange(0.15, 3, 0.5))
             i += 1
     except Exception :
         print("Wrong login or password")
 else :
-    print('Usage : python linkebot --login "login" --password "password"')
+    print('Usage : python Linkebot.py --login "login" --password "password"')

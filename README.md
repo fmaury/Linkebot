@@ -4,7 +4,9 @@ Linkebot est un programme qui permet d'ajouter les suggestions de contact sur Li
 
 ## Installation
 
-`$ pip install -r requirement.txt`
+`$ pip install -r requirements.txt`
+
+`$ brew install geckodriver`
 
 ## Usage
 
