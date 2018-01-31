@@ -6,7 +6,7 @@ import sys
 
 i = 0
 if len(sys.argv) < 4 :
-    print('Usage : python linkebot --login "login" --password "password"')
+    print('Usage : python Linkebot.py --login "login" --password "password"')
     sys.exit(0)
 if (sys.argv[1] == "--login" and sys.argv[3]  == "--password") or  (sys.argv[3] == "--login" and sys.argv[1]  == "--password") :
     try :
