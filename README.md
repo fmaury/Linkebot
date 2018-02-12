@@ -11,5 +11,5 @@ Linkebot est un programme qui permet d'ajouter les suggestions de contact sur Li
 ## Usage
 
 ```
-python Linkebot.py --login [login] --password [password]
+python Linkebot.py
 ```
